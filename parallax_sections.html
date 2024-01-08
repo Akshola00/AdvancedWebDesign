@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .title {
+            font-size: 7rem;
+            color: white;
+            text-shadow: 0 0 5px black;
+        }
+        .wrapper {
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            perspective: 10px;
+        }
+        header{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            transform-style: preserve-3d ;
+            z-index: -1;
+        }
+        section{
+            font-size: 2rem;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+        }
+        img{
+            /* width: 100%; */
+        }
+        .background,.foreground {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .background{
+            transform: translateZ(-10px) scale(2);
+        }
+        .foreground{
+            height: 70%;
+            transform: translateZ(-5px) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/cf1.jpg" class="background">
+            <img src="img/cf2.jpg" class="foreground">
+            <h1 class="title">Welcome !</h1>
+        </header>
+        <section>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis accusantium exercitationem delectus distinctio tenetur dicta ipsum iusto aliquid labore quasi, repellat a sequi nihil incidunt dolore iste, pariatur suscipit consectetur sed nulla culpa, consequatur reiciendis aperiam tempore. Perferendis nihil hic earum soluta, inventore rerum unde iusto debitis repellendus provident, tempora id dolorum nostrum, libero maiores voluptatibus illo obcaecati suscipit doloribus voluptas deserunt alias? Quisquam est reiciendis voluptatum illo provident? Molestias non quo ipsa quibusdam quis corporis, quasi tempora eius aliquam facere dolorem dignissimos iure impedit culpa obcaecati. Iusto at totam, omnis accusantium quae suscipit distinctio magni nostrum magnam ipsum unde voluptatibus repudiandae, tempore asperiores ut quas autem ducimus qui sunt laudantium non, aperiam vel dolor! Consectetur, excepturi deleniti quasi blanditiis maiores quidem, quae nulla, iusto suscipit sed illum. Repellat blanditiis sapiente vel cumque, sunt distinctio, provident quo at nisi accusantium doloribus commodi nulla quibusdam non temporibus. Iste voluptatibus facere ipsam doloremque reprehenderit hic vel id dignissimos saepe! Sequi soluta rem ipsum nobis eveniet magni consequuntur fugit ullam. Natus sit repudiandae deserunt aut reiciendis? Eligendi voluptatum voluptate, inventore odio dignissimos aliquid ullam enim saepe accusantium, quam explicabo blanditiis. Expedita, voluptates voluptas? Cum iste aliquam veniam est natus iure, pariatur harum ducimus, nobis consectetur modi veritatis. Facere tenetur sed expedita nemo provident natus ullam harum corporis minima? Rerum quis in eos non, veritatis laborum! Illum fugit perferendis atque nihil, quis impedit possimus? Facilis placeat consectetur aliquam error ad dolores, nam porro delectus ducimus quo fugit recusandae reiciendis? Facere eaque animi, praesentium dolores, beatae voluptatibus facilis, perspiciatis iste tempora modi commodi dignissimos. Quod, ratione. Veniam fuga, molestias nam non maxime nihil velit quo! Omnis beatae quod impedit deleniti, libero necessitatibus in temporibus rerum natus, laboriosam illum autem adipisci totam commodi consequatur magni assumenda veniam vel aut odio laudantium quibusdam ipsum! Magni, animi quae!
+        </section>
+    </div>
+</body>
+</html>
